@@ -5,9 +5,7 @@ import groovy.json.JsonOutput
 
 class IntegrateTeams {
     def connect = { ->
-        // put the Microsoft Teams channel webhook url here
-        def url = ""
-        // put the text that you would like to post to Microsoft Teams
+        def url = "<< enter Teams URL >>"
         def text = "Hello World! Hi, From Groovy API Integration!"
 
         def jsonText = JsonOutput.toJson([text: text])
@@ -25,5 +23,4 @@ class IntegrateTeams {
         def teams = new IntegrateTeams()
         teams.connect()
     }
-
 }
